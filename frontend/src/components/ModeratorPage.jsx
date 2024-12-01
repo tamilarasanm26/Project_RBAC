@@ -19,7 +19,7 @@ const ModeratorPage = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/blogs');
+      const response = await axios.get('https://project-rbac-01.onrender.com/api/blogs');
       setBlogs(response.data);
     } catch (error) {
       console.error('Error fetching blogs:', error);
@@ -30,7 +30,7 @@ const ModeratorPage = () => {
     e.preventDefault();
     try {
       if (isEditing) {
-        const response = await axios.put(`http://localhost:5000/api/blogs/${editBlogId}`, {
+        const response = await axios.put(`https://project-rbac-01.onrender.com/api/blogs/${editBlogId}`, {
           title,
           description,
         });
@@ -38,7 +38,7 @@ const ModeratorPage = () => {
         setIsEditing(false);
         setEditBlogId(null);
       } else {
-        const response = await axios.post('http://localhost:5000/api/blogs', {
+        const response = await axios.post('https://project-rbac-01.onrender.com/api/blogs', {
           title,
           description,
         });

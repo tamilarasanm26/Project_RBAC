@@ -13,7 +13,7 @@ const RegisterPage = () => {
     e.preventDefault();
     try {
       // Send request to register with default role 'user'
-      const response = await axios.post(`http://localhost:5000/api/auth/register`, { username, password });
+      const response = await axios.post('https://project-rbac-01.onrender.com/api/auth/register', { username, password });
       setMessage(response.data.message);
       navigate('/login');
     } catch (error) {
