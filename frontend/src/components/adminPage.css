@@ -1,0 +1,229 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px; /* Minimized container width */
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 80px; /* Ensure space for fixed elements */
+    max-height: 80vh; /* Limit container height */
+    overflow-y: auto; /* Allow scrolling for content overflow */
+  }
+  
+  h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .title {
+    font-size: 24px; /* Reduced font size */
+    color: #4a90e2;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 25px;
+  }
+  
+  .form-container,
+  .blogs-container {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    min-height: 250px; /* Fixed height for form container */
+    box-sizing: border-box;
+  }
+  
+  .form-title {
+    font-size: 18px; /* Reduced title font size */
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .blogs-header {
+    font-size: 18px; /* Reduced font size */
+    color: #555;
+    text-align: center;
+  }
+  
+  .blogs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    gap: 15px; /* Reduced gap */
+  }
+  
+  .blog-card {
+    background-color: #fff;
+    padding: 12px; /* Reduced padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .blog-title {
+    font-size: 16px; /* Reduced font size */
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .blog-description {
+    font-size: 12px; /* Reduced font size */
+    color: #666;
+    margin-bottom: 12px;
+  }
+  
+  .blog-form {
+    text-align: center;
+  }
+  
+  .blog-input,
+  .blog-textarea {
+    padding: 6px; /* Reduced padding */
+    margin: 6px;
+    width: 80%;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .submit-button {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .submit-button.edit {
+    background-color: #28a745;
+  }
+  
+  .blog-textarea {
+    height: 80px; /* Reduced height */
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button {
+    background-color: #ffc107;
+  }
+  
+  .edit-button:hover {
+    background-color: #e0a800;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    margin-left: 8px;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Fixed Logout and Welcome Admin */
+  .logout-button,
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 20px;
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .logout-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 11; /* Ensure logout button is above header */
+  }
+  
+  .logout-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .fixed-header {
+    font-size: 24px; /* Reduced font size */
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  .message {
+    font-size: 12px;
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-container,
+    .blogs-container {
+      width: 100%;
+    }
+  
+    .logout-button {
+      top: 10px;
+      right: 10px;
+    }
+  
+    .blogs-list {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+  }
+  
