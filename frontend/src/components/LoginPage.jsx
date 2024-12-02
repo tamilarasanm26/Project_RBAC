@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
-import "./style.css"; // If `styles.css` is in the `src` directory
+import "./style.css";
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
