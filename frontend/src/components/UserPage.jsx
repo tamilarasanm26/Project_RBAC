@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './userPage.css'; // Assuming you are adding styles in a separate CSS file
+import './userPage.css'; 
 
 const UserPage = () => {
   const [title, setTitle] = useState('');
@@ -19,7 +19,7 @@ const UserPage = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get('https://project-rbac-01.onrender.com/api/blogs'); // Replace with your API endpoint
+      const response = await axios.get('https://project-rbac-01.onrender.com/api/blogs'); 
       setBlogs(response.data);
     } catch (error) {
       console.error('Error fetching blogs:', error);
