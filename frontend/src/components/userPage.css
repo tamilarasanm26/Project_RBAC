@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -11,7 +11,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    position: relative; /* Ensure this container is the relative parent for absolute positioning */
+    position: relative; 
   }
   
   h1, h2 {
@@ -19,7 +19,7 @@ body {
     color: #333;
   }
   
-  /* Title Styling */
+
   .title {
     font-size: 32px;
     text-align: center;
@@ -34,7 +34,7 @@ body {
     text-align: center;
   }
   
-  /* Blog Cards Styling */
+  
   .blogs-list {
     display: flex;
     flex-wrap: wrap;
@@ -67,7 +67,7 @@ body {
     color: #666;
   }
   
-  /* Logout Button Styling */
+
   .logout-button {
     position: absolute;
     top: 20px;
@@ -86,7 +86,7 @@ body {
     background-color: #0056b3;
   }
   
-  /* Message Styling */
+
   .message {
     font-size: 16px;
     color: #ff4d4d;
